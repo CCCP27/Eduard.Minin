@@ -1,0 +1,107 @@
+﻿<Window x:Class="Eduard.Minin.Views.Windows.HikingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Eduard.Minin.Views.Windows"
+        mc:Ignorable="d"
+        Title="Походы" Height="844" Width="390">
+    <Grid Background="Black">
+        <Image Source="/Resourse/Rectangle 21.png" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="622"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="25"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Resourse/Иконка планета (1).png" 
+    Grid.Row="1" 
+    Grid.Column="7"/>
+            <TextBlock Text="Ваши походы" 
+        Grid.Row="1"
+        Grid.Column="3"
+        Grid.ColumnSpan="3"
+        FontSize="18"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Foreground="Yellow"
+        FontStyle="Italic"/>
+            <Image Source="/Resourse/Line 6.png"  
+      Grid.Row="3" 
+     Grid.ColumnSpan="9"/>
+
+            <Image Source="/Resourse/Меню (1).png" 
+            Grid.Row="5"
+            Grid.RowSpan="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="9" Opacity="0.5"/>
+
+            <Image Source="/Resourse/Иконка ваши походы (1).png" Grid.Row="5" 
+                Grid.Column="1" 
+                Margin="2"
+                VerticalAlignment="Top"/>
+
+
+
+            <Image Source="/Resourse/Иконка Навигации (1).png" 
+           Grid.Row="5" 
+            Grid.Column="3" 
+            Margin="2"
+           MouseDown="Image_MouseDown"/>
+
+            <Image Source="/Resourse/Иконка сообщения.png"    Grid.Row="5" 
+             Grid.Column="5" 
+            Margin="2"
+                   MouseDown="Image_MouseDown_1"/>
+
+
+            <Image Source="/Resourse/Иконка профиль.png" 
+           Grid.Row="5" 
+            Grid.Column="7" 
+            Margin="2"/>
+
+            <Image Source="/Resourse/Ваши походы.png"  Grid.Row="6" 
+                Grid.Column="1" 
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
+
+
+            <TextBlock Text="Профиль" 
+                Grid.Row="6" 
+                Grid.Column="7" 
+                FontSize="11"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Навигация" 
+                Grid.Row="6" 
+                Grid.Column="3" 
+                FontSize="11"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"/>
+            <TextBlock Text="Сообшения" 
+                    Grid.Row="6" 
+                    Grid.Column="5" 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"/>
+
+
+        </Grid>
+    </Grid>
+</Window>
